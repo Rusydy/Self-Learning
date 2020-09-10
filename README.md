@@ -1,1 +1,3 @@
-# GoLang-vs-JS-Project-
+# GoLang-vs-JS-Project
+
+Let's solve problems!
