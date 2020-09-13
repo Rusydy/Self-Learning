@@ -1,3 +1,3 @@
-# GoLang-vs-JS-Project
+# Knowledge is open-source
 
 Let's solve problems!
