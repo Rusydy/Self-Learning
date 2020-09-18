@@ -35,16 +35,11 @@ func SortByPrice(flights []Flight) []Flight {
 
 func printFlights(flights []Flight) {
 	for _, flight := range flights {
-		fmt.Printf("Origin: %s, Destination: %s, Price: %d", flight.Origin, flight.Destination, flight.Price)
+		fmt.Printf("Origin: %s,\n Destination: %s,\n Price: %d", flight.Origin, flight.Destination, flight.Price)
 	}
 }
 
 func main() {
-	// an empty slice of flights
-	// var flights []Flight
-
-	// sortedList := SortByPrice(flights)
-	// printFlights(sortedList)
 
 	flights := []Flight{
 		Flight{Price: 30},
@@ -53,7 +48,6 @@ func main() {
 		Flight{Price: 1000},
 	}
 
-	sort.Sort(byPrice(flights))
-
-	fmt.Println(flights)
+	sortedList := SortByPrice(flights)
+	printFlights(sortedList)
 }
