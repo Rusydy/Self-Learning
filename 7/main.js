@@ -20,10 +20,27 @@ function XO(str) {
         } else if (letter.match(oRegexp)) {
             oCount++
         }
-        
+
     }
 
     return xCount == oCount
+}
+
+function XO(str) {
+    const xRegexp = new RegExp('x', 'i');
+    const oRegexp = new RegExp('o', 'i');
+
+    const counts = str.split('').reduce((counts, letter) => {
+
+        if (letter.match(xRegexp)) {
+            counts.xCount++
+        } else if (letter.match(oRegexp)) {
+            counts.oCount++
+        }
+        return counts
+    }, {xCount: 0, oCount: 0})
+
+    return counts.xCount == counts.oCount
 }
 
 const result = XO("xxOo")
