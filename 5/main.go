@@ -2,11 +2,13 @@ package main
 
 import "fmt"
 
+// Developer is a struct
 type Developer struct {
 	Name string
 	Age  int
 }
 
+// FilterUnique is a func
 func FilterUnique(developers []Developer) []string {
 	keys := make(map[string]bool)
 	list := []string{}
