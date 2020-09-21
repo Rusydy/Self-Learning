@@ -20,6 +20,7 @@ function XO(str) {
         } else if (letter.match(oRegexp)) {
             oCount++
         }
+        
     }
 
     return xCount == oCount
