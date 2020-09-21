@@ -41,6 +41,21 @@ String.prototype.toJadenCase = function () {
 };
 
 
+/*
+PSEUDOCODE
+
+Split th string on spaces
+    Capitalize th first letter of each word
+    Join them all back together
+*/
+String.prototype.toJadenCase = function () {
+    return this.split(' ').map(
+        word => {
+            return word[0].toUpperCase() + word.slice(1)
+        }
+    ).join(' ')
+};
+
 let str = "How can mirrors be real if our eyes aren't real"; 
 
 let JadenCase = str.toJadenCase();
